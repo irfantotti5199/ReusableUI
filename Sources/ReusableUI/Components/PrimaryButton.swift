@@ -16,7 +16,7 @@ public struct PrimaryButton: View {
     private let isDisabled: Bool
     private let action: () -> Void
     
-    init(title: String, backgroundColor: Color = .blue, cornerRadius: CGFloat = 12, isLoading: Bool = false, isDisabled: Bool = false, action: @escaping ()->Void) {
+    public init(title: String, backgroundColor: Color = .blue, cornerRadius: CGFloat = 12, isLoading: Bool = false, isDisabled: Bool = false, action: @escaping ()->Void) {
         self.title = title
         self.backgroundColor = backgroundColor
         self.cornerRadius = cornerRadius
